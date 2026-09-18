@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NWMLS First Look, Explained | DP Homes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+--navy: #16283F;
+--navy-soft: #223B5C;
+--gold: #BC9A5F;
+--gold-light: #E4D3AE;
+--cream: #F6F2EA;
+--card: #FFFFFF;
+--ink: #1E2530;
+--muted: #6B6459;
+--line: #E4DDD0;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+#dp-first-look {
+font-family: 'Inter', sans-serif;
+background: var(--cream);
+color: var(--ink);
+padding: 40px 20px 60px;
+}
+
+#dp-first-look .wrap {
+max-width: 780px;
+margin: 0 auto;
+}
+
+#dp-first-look header {
+display: flex;
+align-items: baseline;
+gap: 10px;
+margin-bottom: 4px;
+}
+
+#dp-first-look .brand {
+font-family: 'Fraunces', serif;
+font-weight: 600;
+font-size: 22px;
+color: var(--navy);
+}
+
+#dp-first-look .brand span { color: var(--gold); }
+
+#dp-first-look .tagline {
+font-size: 13px;
+color: var(--muted);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+#dp-first-look h1 {
+font-family: 'Fraunces', serif;
+font-weight: 500;
+font-size: clamp(28px, 4vw, 40px);
+color: var(--navy);
+margin: 26px 0 16px;
+letter-spacing: -0.01em;
+line-height: 1.2;
+}
+
+#dp-first-look p.lede {
+font-size: 16px;
+line-height: 1.7;
+color: var(--ink);
+margin: 0 0 18px;
+}
+
+#dp-first-look p.body-text {
+font-size: 15px;
+line-height: 1.7;
+color: var(--muted);
+margin: 0 0 18px;
+}
+
+#dp-first-look .section-card {
+background: var(--card);
+border: 1px solid var(--line);
+border-radius: 14px;
+padding: 32px 30px;
+margin: 28px 0;
+}
+
+#dp-first-look .section-label {
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: var(--gold);
+margin: 0 0 10px;
+}
+
+#dp-first-look .section-card h2 {
+font-family: 'Fraunces', serif;
+font-weight: 500;
+font-size: 22px;
+color: var(--navy);
+margin: 0 0 14px;
+letter-spacing: -0.01em;
+}
+
+#dp-first-look .section-card p {
+font-size: 15px;
+line-height: 1.7;
+color: var(--muted);
+margin: 0 0 14px;
+}
+
+#dp-first-look .section-card p:last-child { margin-bottom: 0; }
+
+#dp-first-look .two-col {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 24px;
+margin: 28px 0;
+}
+
+@media (max-width: 680px) {
+#dp-first-look .two-col { grid-template-columns: 1fr; }
+}
+
+#dp-first-look .two-col .section-card { margin: 0; }
+
+#dp-first-look .facts-card {
+background: var(--navy-soft);
+border-radius: 14px;
+padding: 32px 30px;
+margin: 28px 0;
+color: #fff;
+}
+
+#dp-first-look .facts-card .section-label { color: var(--gold-light); }
+
+#dp-first-look .facts-card ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+#dp-first-look .facts-card li {
+font-size: 14.5px;
+line-height: 1.6;
+color: #D9DEE6;
+padding: 10px 0;
+border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+#dp-first-look .facts-card li:first-child { border-top: none; padding-top: 0; }
+
+#dp-first-look .facts-card strong { color: #fff; }
+
+#dp-first-look .cta-block {
+background: var(--navy);
+border-radius: 14px;
+padding: 36px 34px;
+color: #fff;
+text-align: center;
+margin-top: 36px;
+}
+
+#dp-first-look .cta-block p {
+font-size: 15.5px;
+line-height: 1.65;
+color: #D9DEE6;
+margin: 0 0 24px;
+max-width: 520px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#dp-first-look .cta-row {
+display: flex;
+justify-content: center;
+gap: 12px;
+flex-wrap: wrap;
+}
+
+#dp-first-look .cta-btn {
+display: inline-block;
+background: var(--gold);
+color: var(--navy);
+text-align: center;
+padding: 14px 28px;
+border-radius: 8px;
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.01em;
+text-decoration: none;
+transition: filter 0.15s;
+}
+
+#dp-first-look .cta-btn:hover,
+#dp-first-look .cta-btn:active { filter: brightness(1.08); }
+
+#dp-first-look .cta-btn.secondary {
+background: transparent;
+border: 1.5px solid var(--gold);
+color: var(--gold-light);
+}
+
+#dp-first-look .source-note {
+font-size: 12px;
+color: var(--muted);
+margin-top: 28px;
+line-height: 1.6;
+}
+
+#dp-first-look footer {
+text-align: center;
+margin-top: 36px;
+font-size: 12px;
+color: var(--muted);
+}
+</style>
+</head>
+<body>
+
+<div id="dp-first-look">
+<div class="wrap">
+
+<header>
+<div class="brand">DP <span>Homes</span></div>
+<div class="tagline">Keller Williams Bellevue</div>
+</header>
+
+<h1>There's a New Way Homes Hit the Market in Washington</h1>
+
+<p class="lede">Starting September 2026, Northwest MLS introduced a new listing option called First Look. Depending on which side of a transaction you're on, it can work in your favor, or work against you if you don't know it exists.</p>
+
+<div class="section-card">
+<p class="section-label">What Is First Look?</p>
+<h2>A coming-soon status, built into the MLS</h2>
+<p>First Look gives a seller up to 21 days to market their home before it officially goes Active. During that window, the listing doesn't accumulate public days on market, and any price changes aren't shown publicly. Showings and offers are both allowed, if the seller chooses to permit them.</p>
+<p>Every First Look listing still has to be entered into the MLS. There's no such thing as a fully private listing here &mdash; the real question is how visible a seller decides to make it beyond that.</p>
+</div>
+
+<div class="section-card">
+<p class="section-label">The Part That Matters Most</p>
+<h2>Sellers choose who sees it</h2>
+<p>A seller can decide whether their First Look listing gets marketed to public home search sites, or stays visible only within the MLS itself. Some sellers will want maximum exposure right away. Others will use this quiet period to test pricing, gather feedback, and avoid the pressure of a home sitting publicly for months.</p>
+<p>That choice is exactly why this matters differently depending on which side of the transaction you're on.</p>
+</div>
+
+<div class="two-col">
+
+<div class="section-card">
+<p class="section-label">If You're Buying</p>
+<h2>You could be missing homes</h2>
+<p>If you're only checking your favorite home search sites, you could be missing homes that are already showing and already receiving offers. A First Look listing that isn't marketed publicly won't appear there at all, and by the time it does go fully Active, it may already be under contract.</p>
+<p>Working with an agent who has direct MLS access means you're seeing these homes the moment they enter the system, not after a seller has already decided whether to make it public.</p>
+</div>
+
+<div class="section-card">
+<p class="section-label">If You're Selling</p>
+<h2>You have a real new option</h2>
+<p>If you want to test pricing, get real buyer feedback, or simply avoid the stigma of a stale days-on-market count while you get things right, First Look gives you that room.</p>
+<p>It's not the right fit for every situation. Whether it makes sense for you depends on your timeline, your goals, and how you want your home introduced to the market &mdash; exactly the kind of thing worth a real conversation before you decide.</p>
+</div>
+
+</div>
+
+<div class="facts-card">
+<p class="section-label">The Bottom Line</p>
+<ul>
+<li><strong>Up to 21 days</strong> of pre-market visibility before a listing goes fully Active</li>
+<li><strong>No public days-on-market</strong> or price-change history during that window</li>
+<li><strong>Sellers choose</strong> whether the listing is marketed to public search sites or stays MLS-only</li>
+<li><strong>Showings and offers</strong> are allowed during First Look, at the seller's discretion</li>
+<li><strong>Every listing</strong> still enters the MLS &mdash; there's no fully private option</li>
+</ul>
+</div>
+
+<p class="source-note">Based on the September 2026 Northwest MLS policy update. Rules can evolve, so specifics should always be confirmed at the time of your transaction.</p>
+
+<div class="cta-block">
+<p class="section-label" style="color: var(--gold-light);">Buying or Selling?</p>
+<p>Whether you're trying to make sure you're not missing homes, or figuring out if First Look is right for your sale, let's talk through what it means for your situation.</p>
+<div class="cta-row">
+<a href="tel:+12067193059" class="cta-btn">Call / Text
+</a>
+<a href="mailto:davepiedrahita@kw.com?subject=NWMLS%20First%20Look%20Question" class="cta-btn secondary">Email Dave
+</a>
+</div>
+</div>
+
+<footer>Dave Piedrahita &middot; DP Homes at Keller Williams Bellevue &middot; WA License #128343</footer>
+
+</div>
+</div>
+</body>
+</html>
